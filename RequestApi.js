@@ -3,6 +3,7 @@ function montaRequest(moedasComparadas) {
   request.onload = function () {
     let data = JSON.parse(this.responseText);
     console.log(data);
+    mostrarResultado(data);
   };
   request.open(
     "GET",
@@ -10,5 +11,3 @@ function montaRequest(moedasComparadas) {
   );
   request.send();
 }
-
-montaRequest("BTC-BRL");

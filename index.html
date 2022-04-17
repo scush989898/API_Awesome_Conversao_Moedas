@@ -5,10 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AwesomeAPIConversaoMoedas</title>
+    <link rel="stylesheet" href="/style/style.css" />
   </head>
   <body>
-    <div id="perfil"></div>
-    <script src="/Classes/ConversaoMoeda.js"></script>
+    <main>
+      <img src="/imagens/logo_site.png" id="Logo" />
+      <h1>Awesome API</h1>
+      <div class="container-input">
+        <label for="selecionando-moedas">Selecione as Moedas: </label>
+        <select class="selecionando-moedas" id="inicial">
+          <option>--Escolha uma moeda--</option>
+          <option value="CAD">Dólar Canadense</option>
+          <option value="USD">Dólar Americano</option>
+          <option value="EUR">Euro</option>
+          <option value="BRL">Real Brasileiro</option>
+          <option value="RUB">Rublo Russo</option>
+          <option value="JPY">Iene</option>
+          <option value="ARS">Peso Argentino</option>
+          <option value="BTC">Bitcoin</option>
+        </select>
+        <select class="selecionando-moedas" id="secundario">
+          <option>--Escolha uma moeda--</option>
+          <option value="CAD">Dólar Canadense</option>
+          <option value="USD">Dólar Americano</option>
+          <option value="EUR">Euro</option>
+          <option value="BRL">Real Brasileiro</option>
+          <option value="RUB">Rublo Russo</option>
+          <option value="JPY">Iene</option>
+          <option value="ARS">Peso Argentino</option>
+          <option value="BTC">Bitcoin</option>
+        </select>
+        <button id="botao-buscar">Buscar</button>
+      </div>
+
+      <div class="resultado-busca"></div>
+    </main>
+    <aside>
+      aside Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+      laboriosam repellat mollitia ipsam error dolorum maxime. Nisi aut saepe
+      pariatur doloribus fugit omnis magni ut impedit labore asperiores? Eos,
+      fuga?
+    </aside>
+
     <script src="RequestApi.js"></script>
+    <script src="/Classes/ConversaoMoeda.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
