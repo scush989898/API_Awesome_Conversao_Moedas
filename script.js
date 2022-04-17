@@ -1,12 +1,7 @@
-const antoniel = [];
-
 function carrega() {
   let xhr = new XMLHttpRequest();
   xhr.onload = function () {
     let data = JSON.parse(this.responseText);
-    antoniel.push(data);
-    console.log(data);
-
     let bio = `
         <div class="container-fluid">
         <div class="row justify-content-center">
