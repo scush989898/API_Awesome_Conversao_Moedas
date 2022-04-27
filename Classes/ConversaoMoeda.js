@@ -4,7 +4,7 @@ class ConversaoMoeda {
     this.codigoPrimario = nome.slice(0, auxiliar);
     this.codigoSecundario = nome.slice(auxiliar + 1);
     this.valorComparado = 1;
-    this.valorConvertido = parseFloat(valorConvertido).toFixed(3);
+    this.valorConvertido = parseFloat(valorConvertido).toFixed(2);
     this.dataComparacao = dataComparacao;
   }
 }
